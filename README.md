@@ -3,6 +3,10 @@
 Otevřená **mapa naskenovaných matričních knih** českých archivů: který snímek je který rok, ves a strana,
 kde je rejstřík a jak je kniha uspořádaná. Pro lidi i pro AI agenty, kteří dělají rodokmeny.
 
+**Hlavní přínos: šetří tokeny a zátěž archivů.** Agent (nebo člověk) neotvírá desítky snímků, aby našel
+správný rok nebo ves – zeptá se mapy a otevře rovnou ten správný. Každý snímek je pro AI drahý obrázek ve vysokém
+rozlišení a archivy kvůli opakovanému stahování blokují přístup; mapa tu orientaci zaplatí jednou pro všechny.
+
 > Stav: **návrh a pilot** (listopad 2026) – první mapy z fary Čistá a Petrovice (SOA Praha) a Chříč,
 > Kožlany, Kozojedy, Liblín (SOA Plzeň).
 
