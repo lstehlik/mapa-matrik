@@ -11,6 +11,7 @@ import re
 import subprocess
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from kontrola import check
 
 MAX_POINTS = 200

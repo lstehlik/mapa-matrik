@@ -9,7 +9,7 @@ import time
 import urllib.error
 import urllib.request
 
-from mapa import load, mark_verified, slug, WEB
+from mapa import load, mark_verified, place_names, slug, WEB
 
 CACHE = pathlib.Path(os.environ.get("MAPA_MATRIK_CACHE", pathlib.Path.home() / ".cache" / "mapa-matrik" / "web"))
 TTL = 24 * 3600
@@ -21,7 +21,7 @@ class Local:
     def volumes(self, place):
         vols = [mark_verified(v) for _, v in load()]
         if place:
-            vols = [v for v in vols if slug(place) in [slug(p) for p in v.get("places") or []]]
+            vols = [v for v in vols if slug(place) in [slug(p) for p in place_names(v)]]
         return vols
 
     def volume(self, archive, portal_id):

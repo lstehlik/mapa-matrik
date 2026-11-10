@@ -71,7 +71,7 @@ Tři úrovně ve stejných datech, plněné postupně tím, co agenti stejně ot
 
 | úroveň | otázka | kde v datech | stav |
 |---|---|---|---|
-| 1. rozcestník | které knihy pokrývají obec a rok? | pole svazku (`parish`, `places`, `records`) → `v1/obce/<obec>.json` | roste s každou otevřenou knihou (`pridej_svazek`) |
+| 1. rozcestník | které knihy pokrývají obec a rok? | pole svazku (`parish`, `places`, `aliases`, `records`) → `v1/obce/<obec>.json` | roste s každou otevřenou knihou (`pridej_svazek`, u Porta fontium `katalog_pf.py`); celý katalog archivu jen s jeho souhlasem |
 | 2. mapa svazku | který snímek otevřít? | `points`, `sections`, `index` | jádro, verze 1 |
 | 3. rejstřík jmen | kde je konkrétní člověk? | samostatné soubory, jen zákonně veřejné zápisy | verze 2 |
 

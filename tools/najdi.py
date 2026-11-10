@@ -4,8 +4,10 @@ Vypíše knihy, které obec a rok pokrývají, nejbližší orientační body a 
 Odhad je lineární interpolace mezi dvěma nejbližšími body téhož druhu (a téže vsi, je-li kniha po vsích).
 Bez --web čte místní data repozitáře, s --web zveřejněnou mapu (MAPA_MATRIK_URL).
 """
+import pathlib
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from klient import source
 from mapa import report
 

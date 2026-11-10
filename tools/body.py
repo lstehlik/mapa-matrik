@@ -14,6 +14,7 @@ import pathlib
 import subprocess
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from mapa import POINT_KEYS, TYPES
 
 STORE = pathlib.Path(os.environ.get("MAPA_MATRIK_BODY",
@@ -88,6 +89,8 @@ def apply(repo, by):
                 warnings.append(f"{e['archive']}/{e['portal_id']}: svazek v mapě není a chybí jeho údaje (pridej_svazek)")
                 continue
         vol = touched[path]
+        for k, v in volumes.get((e["archive"], e["portal_id"]), {}).items():
+            vol.setdefault(k, v)
         point = {**e["point"], "by": by}
         if point in vol["points"]:
             continue

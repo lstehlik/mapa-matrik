@@ -4,8 +4,10 @@ Přidání do Claude Code:  claude mcp add mapa-matrik -- python3 /cesta/k/mapa-
 Přepínač --lokalne čte jen místní data repozitáře; jinak zveřejněnou mapu (při nedostupnosti místní data).
 """
 import json
+import pathlib
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import body
 from klient import source
 from mapa import report

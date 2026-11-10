@@ -7,7 +7,7 @@ DATA = pathlib.Path(__file__).resolve().parent.parent / "data"
 TYPES = {"N", "O", "Z", "iN", "iO", "iZ", "title", "blank"}
 POINT_KEYS = {"scan", "type", "year", "year_to", "months", "page", "place", "letters", "note", "by"}
 VOLUME_KEYS = {"schema", "archive", "portal", "portal_id", "url", "scan_url", "signature", "parish", "district",
-               "places", "records", "scans", "language", "order", "index", "points", "sections", "notes", "sources"}
+               "places", "aliases", "records", "scans", "language", "order", "index", "points", "sections", "notes", "sources"}
 WEB = "https://ondrnovy.github.io/mapa-matrik/v1"
 
 
@@ -57,8 +57,16 @@ def mark_verified(vol):
     return vol
 
 
+def place_names(vol):
+    """Obce knihy včetně jiných názvů (německé, historické) z pole aliases."""
+    names = list(vol.get("places") or [])
+    for alts in (vol.get("aliases") or {}).values():
+        names += alts
+    return names
+
+
 def covers(vol, place, year, kind):
-    if place and norm(place) not in [norm(p) for p in vol.get("places") or []]:
+    if place and norm(place) not in [norm(p) for p in place_names(vol)]:
         return False
     for k, span in (vol.get("records") or {}).items():
         if kind and k.lstrip("i") != kind:
@@ -105,6 +113,8 @@ def report(volumes, place, year, kind):
         if vol.get("index"):
             out.append(f"  rejstřík: {vol['index']}")
         pts, local = relevant_points(vol, place, kind)
+        if not vol.get("points"):
+            out.append("  orientační body zatím nejsou (kniha je jen z katalogu archivu) – po přečtení snímku zapiš bod")
         if vol.get("order", "").startswith("by_village") and not local:
             out.append(f"  ⚠ kniha je po vsích a oddíl {place} v mapě zatím není – odhad podle jiných vsí nemá smysl")
             pts = []
@@ -121,6 +131,8 @@ def report(volumes, place, year, kind):
             lo, hi, how = est
             label = f"sn. {lo}" if lo == hi else f"sn. {lo}–{hi}"
             out.append(f"  → začni na {label} ({how}): {scan_link(vol, lo)}")
+        else:
+            out.append(f"  kniha: {vol['url']}")
         for n in vol.get("notes") or []:
             out.append(f"  pozn.: {n}")
     if not out:
