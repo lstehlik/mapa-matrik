@@ -10,6 +10,11 @@
  "places": [
   "Kožlany"
  ],
+ "aliases": {
+  "Kožlany": [
+   "Koschlan"
+  ]
+ },
  "records": {
   "O": "1895–1949",
   "iO": "1895–1949"
