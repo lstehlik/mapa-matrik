@@ -42,7 +42,8 @@ Klíče jsou anglicky (aby je snadno četly nástroje odkudkoli), hodnoty česky
 | `scan_url` | ne | šablona adresy snímku, `{scan}` = pořadové číslo snímku |
 | `signature` | ano | signatura, jak ji uvádí archiv |
 | `parish`, `district` | ano / ne | fara (původce) a okres |
-| `places` | ne | obce, které kniha pokrývá |
+| `places` | ne | obce, které kniha pokrývá (dnešní český název) |
+| `aliases` | ne | jiné názvy obcí (německé, historické, jak je píše kniha): `{"Kožlany": ["Koschlan", "Kozlany"]}`; klíč musí být v `places`. Rozcestník najde knihu i podle nich |
 | `records` | ano | druhy zápisů a roky: `N` narození, `O` oddaní, `Z` zemřelí, `iN` `iO` `iZ` rejstříky |
 | `scans` | ne | počet snímků |
 | `language` | ne | jazyk zápisů |
@@ -72,6 +73,17 @@ Co čtenář na snímku skutečně viděl:
 
 Ve zveřejněných souborech (`v1/svazky/…`) má každý bod navíc `verified`: `true`, když stejný snímek, druh, rok a ves
 zapsali aspoň dva různí přispěvatelé. U starších bodů bez `by` se počítá první zdroj ze `sources`.
+
+## Svazky z katalogu archivu
+
+Rozcestník (obec → knihy) se plní i z katalogů portálů, bez otevírání snímků: `tools/katalog_pf.py` převede uložený
+výpis matrik Porta fontium na svazky se zdrojem `{"by": "katalog-portafontium"}` a prázdným `points`. Roky v `records`
+jsou u nich za celý svazek, jak je uvádí katalog (u knihy N + O + Z z let 1655–1684 mají všechny tři druhy stejný
+rozsah). Orientační body do nich přibývají běžně (`pridej_bod`).
+
+Katalog je databáze chráněná zvláštním právem pořizovatele (§ 88–94 autorského zákona) a podle
+[podmínek Porta fontium](https://www.portafontium.eu/terms-of-use) se popisy smí užívat jen nevýdělečně s uvedením zdroje.
+Bez souhlasu archivu se proto převádějí jen knihy, se kterými se skutečně pracuje, ne celý katalog.
 
 ## Pravidla
 

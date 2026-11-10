@@ -1,6 +1,8 @@
 """Kontrola formátu map svazků: python3 tools/kontrola.py"""
+import pathlib
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from mapa import POINT_KEYS, TYPES, VOLUME_KEYS, load, years
 
 REQUIRED = ["schema", "archive", "portal", "portal_id", "url", "signature", "parish", "records", "points", "sources"]
@@ -22,6 +24,15 @@ def check(path, vol):
         errors.append(f"složka {path.parent.name} ≠ archive {vol.get('archive')}")
     if vol.get("order") and vol["order"] not in ORDERS:
         errors.append(f"neznámé order {vol['order']}")
+    aliases = vol.get("aliases") or {}
+    if not isinstance(aliases, dict):
+        errors.append("aliases musí být objekt {obec: [jiné názvy]}")
+        aliases = {}
+    for place, alts in aliases.items():
+        if place not in (vol.get("places") or []):
+            errors.append(f"aliases: obec {place} není v places")
+        if not isinstance(alts, list) or not all(isinstance(a, str) and a for a in alts):
+            errors.append(f"aliases: {place} musí mít seznam názvů")
     for kind, span in (vol.get("records") or {}).items():
         if kind not in TYPES or not years(span):
             errors.append(f"records: špatně {kind}: {span}")

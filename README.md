@@ -1,7 +1,8 @@
 # Mapa matrik
 
 Otevřená **mapa naskenovaných matričních knih** českých archivů: který snímek je který rok, ves a strana,
-kde je rejstřík a jak je kniha uspořádaná. Pro lidi i pro AI agenty, kteří dělají rodokmeny.
+kde je rejstřík a jak je kniha uspořádaná. Vždy s odkazem na originál u archivu. Pro lidi i pro AI agenty,
+kteří dělají rodokmeny.
 
 **Hlavní přínos: rychlejší hledání, méně tokenů a menší zátěž archivů.** Agent (nebo člověk) neotvírá desítky snímků, aby našel
 správný rok nebo ves – zeptá se mapy a otevře rovnou ten správný. Každý snímek je pro AI drahý obrázek ve vysokém
@@ -40,7 +41,7 @@ Mapa je zveřejněná jako statické soubory JSON na `https://ondrnovy.github.io
 | adresa | obsah |
 |---|---|
 | `v1/index.json` | přehled: počty, archivy, seznam obcí |
-| `v1/obce/<obec>.json` | knihy, které obec pokrývají (obec malými písmeny bez diakritiky, mezery = `-`, např. `krakov`, `nova-ves`) |
+| `v1/obce/<obec>.json` | rozcestník: knihy, které obec pokrývají (obec malými písmeny bez diakritiky, mezery = `-`, např. `krakov`, `nova-ves`; funguje i německý název, např. `koschlan`). U každé knihy počet orientačních bodů (`points`) |
 | `v1/svazky/<archiv>/<id>.json` | celá mapa knihy: uspořádání, rejstřík, oddíly, orientační body (`verified` = potvrdili dva různí přispěvatelé) |
 
 Odhad snímku mezi dvěma body je lineární interpolace (viz `estimate` v [tools/mapa.py](tools/mapa.py)).

@@ -10,7 +10,8 @@ import pathlib
 import shutil
 import sys
 
-from mapa import load, mark_verified, slug
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from mapa import load, mark_verified, place_names, slug
 
 PAGE = """<!doctype html>
 <html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,10 +51,13 @@ def main(argv):
         volumes += 1
         points += len(vol.get("points") or [])
         archives[vol["archive"]] = archives.get(vol["archive"], 0) + 1
-        ref = {k: vol.get(k) for k in ("archive", "portal_id", "signature", "parish", "records", "order")}
+        ref = {k: vol[k] for k in ("archive", "portal_id", "signature", "parish", "district", "records", "order",
+                                   "scans") if vol.get(k) is not None}
+        ref["points"] = len(vol.get("points") or [])
         ref["path"] = rel
-        for place in vol.get("places") or []:
-            entry = places.setdefault(slug(place), {"name": place, "volumes": []})
+        for key in dict.fromkeys(slug(p) for p in place_names(vol)):
+            name = next(p for p in place_names(vol) if slug(p) == key)
+            entry = places.setdefault(key, {"name": name, "volumes": []})
             entry["volumes"].append(ref)
     for key, entry in places.items():
         target = v1 / "obce" / f"{key}.json"
