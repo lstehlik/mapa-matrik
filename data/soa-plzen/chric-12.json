@@ -1,0 +1,55 @@
+{
+ "schema": 1,
+ "archive": "soa-plzen",
+ "portal": "portafontium",
+ "portal_id": "chric-12",
+ "url": "https://www.portafontium.eu/register/soap-pn/chric-12",
+ "signature": "Chříč 12",
+ "parish": "Chříč",
+ "district": "Plzeň-sever",
+ "places": [
+  "Slatina",
+  "Březsko"
+ ],
+ "records": {
+  "N": "1848–1891"
+ },
+ "scans": 99,
+ "language": "čeština",
+ "order": "chronological",
+ "index": {
+  "volume": "soa-plzen/chric-14",
+  "refers_to": "page"
+ },
+ "points": [
+  {
+   "scan": 60,
+   "type": "N",
+   "year": 1878
+  },
+  {
+   "scan": 74,
+   "type": "N",
+   "year": 1880,
+   "months": "VII–XII",
+   "page": "73"
+  },
+  {
+   "scan": 76,
+   "type": "N",
+   "year": 1881,
+   "months": "III–VII",
+   "page": "75"
+  }
+ ],
+ "sections": [],
+ "notes": [
+  "Dvůr Březsko zapisován do knihy Slatiny."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

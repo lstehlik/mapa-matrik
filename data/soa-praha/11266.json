@@ -1,0 +1,99 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "11266",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/11266",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/11266/{scan}",
+ "signature": "Petrovice-RA 21",
+ "parish": "Petrovice",
+ "district": "Rakovník",
+ "places": [
+  "Příčina",
+  "Žďár"
+ ],
+ "records": {
+  "N": "1874–1892",
+  "O": "1874–1899",
+  "Z": "1876–1915"
+ },
+ "scans": 232,
+ "language": "čeština",
+ "order": "mixed",
+ "index": {
+  "scans": "~215–232",
+  "note": "společný rejstřík N/O/Z"
+ },
+ "points": [
+  {
+   "scan": 120,
+   "type": "O",
+   "year": 1886,
+   "page": "118"
+  },
+  {
+   "scan": 136,
+   "type": "O",
+   "year": 1897,
+   "page": "134"
+  },
+  {
+   "scan": 196,
+   "type": "Z",
+   "year": 1902,
+   "year_to": 1903,
+   "page": "199"
+  },
+  {
+   "scan": 198,
+   "type": "Z",
+   "year": 1905,
+   "page": "201"
+  },
+  {
+   "scan": 205,
+   "type": "Z",
+   "year": 1909,
+   "page": "208"
+  },
+  {
+   "scan": 207,
+   "type": "Z",
+   "year": 1910,
+   "year_to": 1911,
+   "page": "210"
+  },
+  {
+   "scan": 208,
+   "type": "Z",
+   "year": 1911,
+   "year_to": 1912,
+   "page": "211"
+  },
+  {
+   "scan": 219,
+   "type": "iN",
+   "letters": "J"
+  },
+  {
+   "scan": 220,
+   "type": "iN",
+   "letters": "L"
+  },
+  {
+   "scan": 229,
+   "type": "iN",
+   "letters": "V"
+  }
+ ],
+ "sections": [],
+ "notes": [
+  "Rejstřík Z 12. 11. 1902 „Jaroš“ je ve skutečnosti Janoušek."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

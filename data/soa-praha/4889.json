@@ -1,0 +1,289 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "4889",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/4889",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/4889/{scan}",
+ "signature": "Čistá 06",
+ "parish": "Čistá",
+ "district": "Rakovník",
+ "places": [
+  "Čistá",
+  "Krakov",
+  "Bělbožice",
+  "Břežany",
+  "Křekovice",
+  "Kůzová",
+  "Nová Ves",
+  "Šípy",
+  "Strachovice",
+  "Všesulov",
+  "Zavidov",
+  "Zdeslav"
+ ],
+ "records": {
+  "N": "1778–1817",
+  "Z": "1778–1799"
+ },
+ "scans": 200,
+ "language": "latina",
+ "order": "chronological",
+ "index": {
+  "volume": "soa-praha/5864 (N 1761–1790)",
+  "refers_to": "page",
+  "note": "stránkování rejstříku u let 1784–1787 nesedí"
+ },
+ "points": [
+  {
+   "scan": 2,
+   "type": "title"
+  },
+  {
+   "scan": 6,
+   "type": "N",
+   "year": 1778,
+   "year_to": 1779,
+   "months": "X–III",
+   "page": "4–5"
+  },
+  {
+   "scan": 7,
+   "type": "N",
+   "year": 1779,
+   "page": "6–7"
+  },
+  {
+   "scan": 10,
+   "type": "N",
+   "year": 1780,
+   "months": "XI"
+  },
+  {
+   "scan": 13,
+   "type": "N",
+   "year": 1781
+  },
+  {
+   "scan": 14,
+   "type": "N",
+   "year": 1781,
+   "months": "XI",
+   "page": "20–21"
+  },
+  {
+   "scan": 19,
+   "type": "N",
+   "year": 1783,
+   "months": "I",
+   "page": "30–31"
+  },
+  {
+   "scan": 23,
+   "type": "N",
+   "year": 1783,
+   "page": "38–39"
+  },
+  {
+   "scan": 24,
+   "type": "N",
+   "year": 1784,
+   "months": "I–IV"
+  },
+  {
+   "scan": 25,
+   "type": "N",
+   "year": 1784,
+   "page": "42–43"
+  },
+  {
+   "scan": 26,
+   "type": "N",
+   "year": 1786,
+   "months": "I–II",
+   "page": "44–45"
+  },
+  {
+   "scan": 27,
+   "type": "N",
+   "year": 1786
+  },
+  {
+   "scan": 28,
+   "type": "N",
+   "year": 1786,
+   "months": "VII–X"
+  },
+  {
+   "scan": 29,
+   "type": "N",
+   "year": 1786,
+   "months": "X–XII"
+  },
+  {
+   "scan": 30,
+   "type": "N",
+   "year": 1786,
+   "year_to": 1787,
+   "months": "XII–I"
+  },
+  {
+   "scan": 31,
+   "type": "N",
+   "year": 1787,
+   "months": "I–II",
+   "page": "54–55"
+  },
+  {
+   "scan": 32,
+   "type": "N",
+   "year": 1787,
+   "note": "vpravo květen"
+  },
+  {
+   "scan": 33,
+   "type": "N",
+   "year": 1787,
+   "months": "V",
+   "page": "58–59"
+  },
+  {
+   "scan": 34,
+   "type": "N",
+   "year": 1787,
+   "months": "VI–VIII"
+  },
+  {
+   "scan": 35,
+   "type": "N",
+   "year": 1787,
+   "months": "IX–XI"
+  },
+  {
+   "scan": 36,
+   "type": "N",
+   "year": 1787,
+   "year_to": 1788,
+   "months": "XI–I"
+  },
+  {
+   "scan": 37,
+   "type": "N",
+   "year": 1788,
+   "months": "I–IV"
+  },
+  {
+   "scan": 38,
+   "type": "N",
+   "year": 1788,
+   "months": "IV–VII"
+  },
+  {
+   "scan": 39,
+   "type": "N",
+   "year": 1788,
+   "months": "VII–VIII"
+  },
+  {
+   "scan": 40,
+   "type": "N",
+   "year": 1788,
+   "months": "IX–XI"
+  },
+  {
+   "scan": 41,
+   "type": "N",
+   "year": 1789,
+   "months": "I–II"
+  },
+  {
+   "scan": 42,
+   "type": "N",
+   "year": 1789,
+   "months": "III–IV"
+  },
+  {
+   "scan": 43,
+   "type": "N",
+   "year": 1789,
+   "months": "V–VII"
+  },
+  {
+   "scan": 44,
+   "type": "N",
+   "year": 1789,
+   "months": "VIII–XII"
+  },
+  {
+   "scan": 45,
+   "type": "N",
+   "year": 1790,
+   "months": "I–II"
+  },
+  {
+   "scan": 46,
+   "type": "N",
+   "year": 1790,
+   "months": "II–VII"
+  },
+  {
+   "scan": 47,
+   "type": "N",
+   "year": 1790,
+   "months": "VII–IX"
+  },
+  {
+   "scan": 48,
+   "type": "N",
+   "year": 1790,
+   "months": "X–XII"
+  },
+  {
+   "scan": 49,
+   "type": "N",
+   "year": 1791,
+   "months": "I–V"
+  },
+  {
+   "scan": 50,
+   "type": "N",
+   "year": 1791,
+   "months": "V–VII"
+  },
+  {
+   "scan": 51,
+   "type": "N",
+   "year": 1791,
+   "months": "VIII–XII"
+  },
+  {
+   "scan": 52,
+   "type": "N",
+   "year": 1792,
+   "months": "I–III"
+  },
+  {
+   "scan": 53,
+   "type": "N",
+   "year": 1792,
+   "months": "III–VIII"
+  },
+  {
+   "scan": 65,
+   "type": "N",
+   "year": 1795,
+   "months": "XI–XII"
+  }
+ ],
+ "sections": [],
+ "notes": [
+  "Rok 1785 chybí – je v knize Čistá 07 (soa-praha/4890).",
+  "Sn. 51 dole vlevo: dodatečný zápis křtu (z r. 1824), část zakrytá proužkem papíru."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

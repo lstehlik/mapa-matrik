@@ -1,0 +1,68 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "4890",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/4890",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/4890/{scan}",
+ "signature": "Čistá 07",
+ "parish": "Čistá",
+ "district": "Rakovník",
+ "places": [
+  "Čistá",
+  "Krakov",
+  "Břežany",
+  "Křekovice",
+  "Šípy",
+  "Všesulov",
+  "Zavidov",
+  "Zdeslav"
+ ],
+ "records": {
+  "N": "1784–1785",
+  "O": "1784–1785",
+  "Z": "1784–1785"
+ },
+ "scans": 52,
+ "language": "latina",
+ "order": "by_village",
+ "points": [
+  {
+   "scan": 4,
+   "type": "N",
+   "year": 1784,
+   "page": "4–5"
+  },
+  {
+   "scan": 12,
+   "type": "Z",
+   "year": 1784,
+   "year_to": 1785,
+   "page": "2–3"
+  },
+  {
+   "scan": 23,
+   "type": "O",
+   "note": "prázdné stránky, přelepený list"
+  },
+  {
+   "scan": 24,
+   "type": "N",
+   "year": 1784,
+   "year_to": 1785,
+   "months": "V–III",
+   "page": "57",
+   "place": "Krakov"
+  }
+ ],
+ "sections": [],
+ "notes": [
+  "Tištěné německé formuláře (Geburtsbuch / Trauungsbuch / Sterbregister) z josefínské reformy 1784."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

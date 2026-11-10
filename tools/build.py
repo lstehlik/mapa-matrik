@@ -1,0 +1,73 @@
+"""Sestaví statické „API“ pro GitHub Pages: python3 tools/build.py <výstupní složka>
+
+<výstup>/v1/index.json            přehled (počty, archivy, seznam obcí)
+<výstup>/v1/obce/<obec>.json      svazky, které obec pokrývají (odkazy na svazky)
+<výstup>/v1/svazky/<archiv>/<id>.json   celý svazek s příznakem verified u bodů
+"""
+import datetime
+import json
+import pathlib
+import shutil
+import sys
+
+from mapa import load, mark_verified, slug
+
+PAGE = """<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa matrik</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 16px;background:#fff;color:#222}
+code{background:#f2f2f2;padding:0 .2em}@media (prefers-color-scheme: dark){body{background:#151515;color:#ddd}code{background:#2a2a2a}}</style>
+</head><body>
+<h1>Mapa matrik</h1>
+<p>Otevřená mapa naskenovaných matričních knih: který snímek je který rok, ves a strana. Data pro AI agenty i lidi.</p>
+<ul>
+<li><code>v1/index.json</code> – přehled a seznam obcí</li>
+<li><code>v1/obce/&lt;obec&gt;.json</code> – knihy pro obec (malá písmena bez diakritiky, mezery jako pomlčky, např. <code>v1/obce/krakov.json</code>)</li>
+<li><code>v1/svazky/&lt;archiv&gt;/&lt;id&gt;.json</code> – orientační body knihy</li>
+</ul>
+<p>Svazků: VOLUMES, orientačních bodů: POINTS. Sestaveno BUILT. Licence dat CC0.</p>
+</body></html>
+"""
+
+
+def main(argv):
+    if len(argv) < 2:
+        print(__doc__)
+        return 2
+    out = pathlib.Path(argv[1])
+    if out.exists():
+        shutil.rmtree(out)
+    v1 = out / "v1"
+    places = {}
+    archives = {}
+    volumes = points = 0
+    for path, vol in load():
+        mark_verified(vol)
+        rel = f"svazky/{vol['archive']}/{vol['portal_id']}.json"
+        target = v1 / rel
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(json.dumps(vol, ensure_ascii=False, indent=1), encoding="utf-8")
+        volumes += 1
+        points += len(vol.get("points") or [])
+        archives[vol["archive"]] = archives.get(vol["archive"], 0) + 1
+        ref = {k: vol.get(k) for k in ("archive", "portal_id", "signature", "parish", "records", "order")}
+        ref["path"] = rel
+        for place in vol.get("places") or []:
+            entry = places.setdefault(slug(place), {"name": place, "volumes": []})
+            entry["volumes"].append(ref)
+    for key, entry in places.items():
+        target = v1 / "obce" / f"{key}.json"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(json.dumps(entry["volumes"], ensure_ascii=False, indent=1), encoding="utf-8")
+    built = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+    index = {"schema": 1, "built": built, "volumes": volumes, "points": points, "archives": archives,
+             "places": {k: e["name"] for k, e in sorted(places.items())}}
+    (v1 / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
+    (out / "index.html").write_text(PAGE.replace("VOLUMES", str(volumes)).replace("POINTS", str(points)).replace("BUILT", built), encoding="utf-8")
+    (out / ".nojekyll").write_text("")
+    print(f"{out}: {volumes} svazků, {points} bodů, {len(places)} obcí")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))

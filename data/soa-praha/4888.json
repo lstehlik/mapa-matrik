@@ -1,0 +1,129 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "4888",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/4888",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/4888/{scan}",
+ "signature": "Čistá 05",
+ "parish": "Čistá",
+ "district": "Rakovník",
+ "places": [
+  "Čistá",
+  "Krakov",
+  "Břežany",
+  "Křekovice",
+  "Kůzová",
+  "Šípy",
+  "Všesulov",
+  "Zavidov",
+  "Zdeslav"
+ ],
+ "records": {
+  "N": "1731–1777",
+  "O": "1732–1777",
+  "Z": "1732–1777"
+ },
+ "scans": 395,
+ "language": "latina",
+ "order": "chronological",
+ "index": {
+  "volume": "soa-praha/5863 (N 1732–1760, Z 1732–1777), soa-praha/5864 (N 1761–1790), soa-praha/5866 (O 1732–1777)",
+  "refers_to": "page"
+ },
+ "points": [
+  {
+   "scan": 20,
+   "type": "N",
+   "year": 1735,
+   "page": "30–31"
+  },
+  {
+   "scan": 22,
+   "type": "N",
+   "year": 1736,
+   "months": "I–III",
+   "page": "34–35"
+  },
+  {
+   "scan": 81,
+   "type": "N",
+   "year": 1748,
+   "page": "150–151"
+  },
+  {
+   "scan": 82,
+   "type": "N",
+   "year": 1749,
+   "page": "152–153"
+  },
+  {
+   "scan": 208,
+   "type": "O",
+   "year": 1732,
+   "year_to": 1733,
+   "page": "2–3"
+  },
+  {
+   "scan": 212,
+   "type": "O",
+   "year": 1734,
+   "year_to": 1735,
+   "page": "10–11"
+  },
+  {
+   "scan": 250,
+   "type": "O",
+   "year": 1758,
+   "year_to": 1759,
+   "page": "86–87"
+  },
+  {
+   "scan": 265,
+   "type": "O",
+   "year": 1771,
+   "page": "116–117"
+  },
+  {
+   "scan": 307,
+   "type": "Z",
+   "year": 1744,
+   "page": "70–71"
+  },
+  {
+   "scan": 375,
+   "type": "Z",
+   "year": 1772,
+   "months": "I",
+   "page": "206–207"
+  }
+ ],
+ "sections": [
+  {
+   "scans": "1–~205",
+   "type": "N",
+   "years": "1731–1777"
+  },
+  {
+   "scans": "~206–~300",
+   "type": "O",
+   "years": "1732–1777"
+  },
+  {
+   "scans": "~300–395",
+   "type": "Z",
+   "years": "1732–1777"
+  }
+ ],
+ "notes": [
+  "Hranice oddílů N/O/Z odhadnuté z bodů, ne přesně ověřené.",
+  "Latina, u sňatků 1732–1733 česky.",
+  "I 1772: neobvykle mnoho úmrtí (hladomor 1771–1772)."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "schema": 1,
+ "archive": "soa-plzen",
+ "portal": "portafontium",
+ "portal_id": "kozojedy-17",
+ "url": "https://www.portafontium.eu/register/soap-pn/kozojedy-17",
+ "signature": "Kozojedy 17",
+ "parish": "Kozojedy",
+ "district": "Plzeň-sever",
+ "places": [
+  "Bohy"
+ ],
+ "records": {
+  "O": "1856–1945"
+ },
+ "scans": 51,
+ "order": "chronological",
+ "points": [
+  {
+   "scan": 10,
+   "type": "O",
+   "year": 1862,
+   "note": "přibližně"
+  },
+  {
+   "scan": 16,
+   "type": "O",
+   "year": 1865,
+   "page": "13"
+  },
+  {
+   "scan": 22,
+   "type": "O",
+   "year": 1880,
+   "note": "přibližně"
+  }
+ ],
+ "sections": [],
+ "notes": [],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

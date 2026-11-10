@@ -1,0 +1,166 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "5871",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/5871",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/5871/{scan}",
+ "signature": "Čistá 29",
+ "parish": "Čistá",
+ "district": "Rakovník",
+ "places": [
+  "Bělbožice",
+  "Břežany",
+  "Krakov",
+  "Křekovice",
+  "Kůzová",
+  "Šípy",
+  "Václavský Nový Dvůr",
+  "Všesulov"
+ ],
+ "records": {
+  "O": "1849–1942"
+ },
+ "scans": 245,
+ "language": "čeština",
+ "order": "by_village_bride",
+ "points": [
+  {
+   "scan": 35,
+   "type": "O",
+   "year": 1886,
+   "year_to": 1887,
+   "page": "33",
+   "place": "Břežany"
+  },
+  {
+   "scan": 60,
+   "type": "O",
+   "year": 1857,
+   "year_to": 1858,
+   "page": "58",
+   "place": "Šostov (?)"
+  },
+  {
+   "scan": 80,
+   "type": "O",
+   "year": 1890,
+   "year_to": 1891,
+   "page": "78",
+   "place": "Všesulov"
+  },
+  {
+   "scan": 105,
+   "type": "O",
+   "year": 1860,
+   "year_to": 1863,
+   "page": "103",
+   "place": "Krakov"
+  },
+  {
+   "scan": 109,
+   "type": "O",
+   "year": 1864,
+   "page": "107",
+   "place": "Krakov"
+  },
+  {
+   "scan": 111,
+   "type": "O",
+   "year": 1870,
+   "year_to": 1872,
+   "page": "109",
+   "place": "Bělbožice"
+  },
+  {
+   "scan": 117,
+   "type": "O",
+   "year": 1881,
+   "year_to": 1884,
+   "page": "115",
+   "place": "Bělbožice"
+  },
+  {
+   "scan": 125,
+   "type": "O",
+   "year": 1919,
+   "year_to": 1920,
+   "page": "123",
+   "place": "Bělbožice"
+  },
+  {
+   "scan": 130,
+   "type": "O",
+   "year": 1850,
+   "year_to": 1851,
+   "place": "Šípy"
+  },
+  {
+   "scan": 170,
+   "type": "O",
+   "year": 1938,
+   "year_to": 1941,
+   "place": "Šípy",
+   "note": "konec oddílu"
+  },
+  {
+   "scan": 172,
+   "type": "blank"
+  },
+  {
+   "scan": 190,
+   "type": "O",
+   "year": 1905,
+   "year_to": 1906,
+   "place": "Křekovice"
+  },
+  {
+   "scan": 240,
+   "type": "O",
+   "year": 1930,
+   "year_to": 1933,
+   "place": "Kůzová"
+  }
+ ],
+ "sections": [
+  {
+   "scans": "~100–110",
+   "type": "O",
+   "place": "Krakov",
+   "years": "1849–1864 (pokračování po 1864 nenalezeno)"
+  },
+  {
+   "scans": "111–~128",
+   "type": "O",
+   "place": "Bělbožice",
+   "years": "1870–1920"
+  },
+  {
+   "scans": "130–170",
+   "type": "O",
+   "place": "Šípy",
+   "years": "1850–1941"
+  },
+  {
+   "scans": "173–~200",
+   "type": "O",
+   "place": "Křekovice"
+  },
+  {
+   "scans": "~230–245",
+   "type": "O",
+   "place": "Kůzová",
+   "years": "–1933"
+  }
+ ],
+ "notes": [
+  "Bez rejstříku. Zápis je v oddílu vsi NEVĚSTY (ženich z Krakova může být u Bělbožic).",
+  "Strana knihy = snímek − 2 (ověřeno u sn. 35–125)."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

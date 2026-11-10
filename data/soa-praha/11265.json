@@ -1,0 +1,96 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "11265",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/11265",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/11265/{scan}",
+ "signature": "Petrovice-RA 20",
+ "parish": "Petrovice",
+ "district": "Rakovník",
+ "places": [
+  "Příčina",
+  "Žďár"
+ ],
+ "records": {
+  "N": "1858–1874",
+  "O": "1859–1874",
+  "Z": "1859–1875"
+ },
+ "language": "čeština",
+ "order": "mixed",
+ "index": {
+  "scans": "101–111",
+  "note": "společný rejstřík N/O/Z, sloupce podle druhu"
+ },
+ "points": [
+  {
+   "scan": 66,
+   "type": "N",
+   "year": 1874,
+   "months": "VI",
+   "page": "63"
+  },
+  {
+   "scan": 68,
+   "type": "O",
+   "year": 1859,
+   "year_to": 1862,
+   "page": "65",
+   "note": "všechny sňatky 1859–1862"
+  },
+  {
+   "scan": 69,
+   "type": "O",
+   "year": 1863,
+   "year_to": 1865,
+   "page": "66"
+  },
+  {
+   "scan": 71,
+   "type": "O",
+   "year": 1868,
+   "page": "68"
+  },
+  {
+   "scan": 88,
+   "type": "Z",
+   "year": 1868,
+   "page": "100"
+  },
+  {
+   "scan": 106,
+   "type": "iN",
+   "letters": "F"
+  },
+  {
+   "scan": 108,
+   "type": "iN",
+   "letters": "H"
+  },
+  {
+   "scan": 109,
+   "type": "iN",
+   "letters": "J"
+  },
+  {
+   "scan": 110,
+   "type": "iN"
+  },
+  {
+   "scan": 111,
+   "type": "iN",
+   "letters": "L"
+  }
+ ],
+ "sections": [],
+ "notes": [
+  "Rejstřík u jednoho zápisu z r. 1868 uvádí jiné křestní jméno než zápis v knize."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

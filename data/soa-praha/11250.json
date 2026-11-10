@@ -1,0 +1,89 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "11250",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/11250",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/11250/{scan}",
+ "signature": "Petrovice-RA 09",
+ "parish": "Petrovice",
+ "district": "Rakovník",
+ "places": [
+  "Petrovice",
+  "Příčina",
+  "Řeřichy",
+  "Žďár"
+ ],
+ "records": {
+  "N": "1827–1865",
+  "iN": "1827–1865"
+ },
+ "scans": 379,
+ "language": "latina / čeština",
+ "order": "by_village",
+ "points": [
+  {
+   "scan": 2,
+   "type": "title"
+  },
+  {
+   "scan": 171,
+   "type": "N",
+   "year": 1832,
+   "page": "fol. 176",
+   "place": "Příčina"
+  },
+  {
+   "scan": 172,
+   "type": "N",
+   "year": 1832,
+   "months": "VIII",
+   "page": "fol. 177",
+   "place": "Příčina"
+  },
+  {
+   "scan": 196,
+   "type": "N",
+   "year": 1842,
+   "place": "Příčina"
+  },
+  {
+   "scan": 200,
+   "type": "N",
+   "year": 1844,
+   "place": "Příčina"
+  },
+  {
+   "scan": 250,
+   "type": "N",
+   "year": 1860,
+   "place": "Příčina"
+  },
+  {
+   "scan": 255,
+   "type": "N",
+   "place": "Příčina"
+  },
+  {
+   "scan": 256,
+   "type": "N",
+   "year": 1863,
+   "place": "Příčina"
+  },
+  {
+   "scan": 330,
+   "type": "N",
+   "place": "Řeřichy"
+  }
+ ],
+ "sections": [],
+ "notes": [
+  "Příčina od ~fol. 200 / ~sn. 165 do 1864."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

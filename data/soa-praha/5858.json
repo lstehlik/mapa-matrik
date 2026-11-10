@@ -1,0 +1,80 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "5858",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/5858",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/5858/{scan}",
+ "signature": "Čistá 16",
+ "parish": "Čistá",
+ "district": "Rakovník",
+ "places": [
+  "Čistá",
+  "Krakov",
+  "Břežany",
+  "Křekovice",
+  "Kůzová",
+  "Milíčov",
+  "Šípy",
+  "Václavy",
+  "Všesulov",
+  "Zavidov",
+  "Zdeslav"
+ ],
+ "records": {
+  "O": "1778–1824",
+  "iO": "1778–1824"
+ },
+ "scans": 63,
+ "language": "latina",
+ "order": "chronological",
+ "index": {
+  "scans": "60–61",
+  "by": "groom",
+  "refers_to": "folio"
+ },
+ "points": [
+  {
+   "scan": 3,
+   "type": "O",
+   "year": 1778,
+   "months": "I–IX",
+   "page": "1"
+  },
+  {
+   "scan": 4,
+   "type": "O",
+   "year": 1778,
+   "year_to": 1779,
+   "months": "XI–XI",
+   "page": "2–3"
+  },
+  {
+   "scan": 56,
+   "type": "O",
+   "year": 1820,
+   "year_to": 1821,
+   "page": "106–107"
+  },
+  {
+   "scan": 60,
+   "type": "iO",
+   "letters": "A–F"
+  },
+  {
+   "scan": 61,
+   "type": "iO",
+   "letters": "G–Ž (?)"
+  }
+ ],
+ "sections": [],
+ "notes": [
+  "Rejstřík poškozený, část písmene R nečitelná."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

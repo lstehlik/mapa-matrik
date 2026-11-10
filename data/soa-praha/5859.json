@@ -1,0 +1,63 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "5859",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/5859",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/5859/{scan}",
+ "signature": "Čistá 17",
+ "parish": "Čistá",
+ "district": "Rakovník",
+ "places": [
+  "Čistá",
+  "Krakov",
+  "Břežany",
+  "Křekovice",
+  "Kůzová",
+  "Šípy",
+  "Všesulov"
+ ],
+ "records": {
+  "O": "1805–1850",
+  "iO": "1805–1850"
+ },
+ "scans": 137,
+ "language": "latina",
+ "order": "by_village",
+ "index": {
+  "scans": "125–128",
+  "refers_to": "page"
+ },
+ "points": [
+  {
+   "scan": 105,
+   "type": "O",
+   "year": 1824,
+   "page": "212",
+   "place": "Krakov"
+  },
+  {
+   "scan": 108,
+   "type": "O",
+   "year": 1834,
+   "year_to": 1847,
+   "page": "218–219",
+   "place": "Krakov"
+  },
+  {
+   "scan": 128,
+   "type": "iO",
+   "letters": "L"
+  }
+ ],
+ "sections": [],
+ "notes": [
+  "Mikrofilm, nízký kontrast."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

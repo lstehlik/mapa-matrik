@@ -1,0 +1,56 @@
+{
+ "schema": 1,
+ "archive": "soa-plzen",
+ "portal": "portafontium",
+ "portal_id": "kozlany-22",
+ "url": "https://www.portafontium.eu/register/soap-pn/kozlany-22",
+ "signature": "Kožlany 22",
+ "parish": "Kožlany",
+ "district": "Plzeň-sever",
+ "places": [
+  "Kožlany"
+ ],
+ "records": {
+  "Z": "1900–1949",
+  "iZ": "1900–1949"
+ },
+ "scans": 144,
+ "order": "chronological",
+ "index": {
+  "scans": "~125–144",
+  "refers_to": "folio",
+  "note": "po ~1930 neúplný"
+ },
+ "points": [
+  {
+   "scan": 38,
+   "type": "Z",
+   "page": "fol. 36"
+  },
+  {
+   "scan": 62,
+   "type": "Z",
+   "year": 1914,
+   "page": "fol. 60"
+  },
+  {
+   "scan": 74,
+   "type": "Z",
+   "year": 1918,
+   "page": "fol. 72"
+  },
+  {
+   "scan": 136,
+   "type": "iZ",
+   "letters": "M–N"
+  }
+ ],
+ "sections": [],
+ "notes": [],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

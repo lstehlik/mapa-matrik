@@ -1,0 +1,46 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "5864",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/5864",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/5864/{scan}",
+ "signature": "Čistá 22",
+ "parish": "Čistá",
+ "district": "Rakovník",
+ "places": [
+  "Čistá",
+  "Krakov"
+ ],
+ "records": {
+  "iN": "1761–1790"
+ },
+ "scans": 23,
+ "order": "mixed",
+ "index": {
+  "refers_to": "page",
+  "volume": "soa-praha/4888, soa-praha/4889"
+ },
+ "points": [
+  {
+   "scan": 10,
+   "type": "iN",
+   "letters": "K (?)"
+  },
+  {
+   "scan": 11,
+   "type": "iN",
+   "letters": "L"
+  }
+ ],
+ "sections": [],
+ "notes": [
+  "U let 1783–1787 strany v rejstříku nesedí se stranami knihy Čistá 06; jedna dcera zapsaná pod jménem otce."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "schema": 1,
+ "archive": "soa-plzen",
+ "portal": "portafontium",
+ "portal_id": "kozlany-09",
+ "url": "https://www.portafontium.eu/register/soap-pn/kozlany-09",
+ "signature": "Kožlany 09",
+ "parish": "Kožlany",
+ "district": "Plzeň-sever",
+ "places": [
+  "Kožlany"
+ ],
+ "records": {
+  "N": "1829–1850"
+ },
+ "scans": 164,
+ "order": "chronological",
+ "points": [
+  {
+   "scan": 69,
+   "type": "N",
+   "year": 1839
+  },
+  {
+   "scan": 70,
+   "type": "N",
+   "year": 1839,
+   "months": "IX",
+   "page": "134"
+  },
+  {
+   "scan": 71,
+   "type": "N",
+   "year": 1839
+  }
+ ],
+ "sections": [],
+ "notes": [],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

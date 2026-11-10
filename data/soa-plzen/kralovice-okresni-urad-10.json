@@ -1,0 +1,58 @@
+{
+ "schema": 1,
+ "archive": "soa-plzen",
+ "portal": "portafontium",
+ "portal_id": "kralovice-okresni-urad-10",
+ "url": "https://www.portafontium.eu/register/soap-pn/kralovice-okresni-urad-10",
+ "signature": "Kralovice – okresní úřad 10",
+ "parish": "Kralovice (civilní)",
+ "district": "Plzeň-sever",
+ "places": [
+  "Kralovice",
+  "Kožlany",
+  "Bohy",
+  "Břežany",
+  "okres Kralovice (výběr)"
+ ],
+ "records": {
+  "O": "1931–1947"
+ },
+ "scans": 302,
+ "order": "chronological",
+ "points": [
+  {
+   "scan": 101,
+   "type": "O",
+   "year": 1935,
+   "months": "II",
+   "note": "přibližně"
+  },
+  {
+   "scan": 105,
+   "type": "O",
+   "year": 1935
+  },
+  {
+   "scan": 197,
+   "type": "O",
+   "year": 1940,
+   "months": "IV"
+  },
+  {
+   "scan": 260,
+   "type": "O",
+   "year": 1944,
+   "note": "přibližně"
+  }
+ ],
+ "sections": [],
+ "notes": [
+  "Civilní sňatky (bez vyznání); 2 zápisy na snímek; 1942–1944 německy."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

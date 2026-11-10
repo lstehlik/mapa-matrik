@@ -1,0 +1,77 @@
+{
+ "schema": 1,
+ "archive": "soa-plzen",
+ "portal": "portafontium",
+ "portal_id": "kozlany-21",
+ "url": "https://www.portafontium.eu/register/soap-pn/kozlany-21",
+ "signature": "Kožlany 21",
+ "parish": "Kožlany",
+ "district": "Plzeň-sever",
+ "places": [
+  "Kožlany"
+ ],
+ "records": {
+  "O": "1895–1949",
+  "iO": "1895–1949"
+ },
+ "scans": 189,
+ "order": "chronological",
+ "index": {
+  "scans": "~160–189",
+  "refers_to": "page",
+  "note": "po ~1923 neúplný"
+ },
+ "points": [
+  {
+   "scan": 45,
+   "type": "O",
+   "year": 1903,
+   "page": "43"
+  },
+  {
+   "scan": 60,
+   "type": "O",
+   "year": 1906,
+   "page": "58"
+  },
+  {
+   "scan": 117,
+   "type": "O",
+   "year": 1926,
+   "note": "přibližně"
+  },
+  {
+   "scan": 120,
+   "type": "O",
+   "year": 1929
+  },
+  {
+   "scan": 139,
+   "type": "O",
+   "year": 1941
+  },
+  {
+   "scan": 147,
+   "type": "O",
+   "year": 1945
+  },
+  {
+   "scan": 175,
+   "type": "iO",
+   "letters": "M"
+  },
+  {
+   "scan": 176,
+   "type": "iO",
+   "letters": "N"
+  }
+ ],
+ "sections": [],
+ "notes": [],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

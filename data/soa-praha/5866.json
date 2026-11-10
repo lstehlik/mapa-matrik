@@ -1,0 +1,45 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "5866",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/5866",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/5866/{scan}",
+ "signature": "Čistá 24",
+ "parish": "Čistá",
+ "district": "Rakovník",
+ "places": [
+  "Čistá",
+  "Krakov"
+ ],
+ "records": {
+  "iO": "1732–1777"
+ },
+ "scans": 15,
+ "order": "mixed",
+ "index": {
+  "refers_to": "page",
+  "volume": "soa-praha/4888"
+ },
+ "points": [
+  {
+   "scan": 1,
+   "type": "iO"
+  },
+  {
+   "scan": 7,
+   "type": "iO",
+   "letters": "L–M"
+  }
+ ],
+ "sections": [],
+ "notes": [
+  "Ženichové i nevěsty podle příjmení, rok a strana knihy Čistá 05."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

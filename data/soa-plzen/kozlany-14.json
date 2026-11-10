@@ -1,0 +1,44 @@
+{
+ "schema": 1,
+ "archive": "soa-plzen",
+ "portal": "portafontium",
+ "portal_id": "kozlany-14",
+ "url": "https://www.portafontium.eu/register/soap-pn/kozlany-14",
+ "signature": "Kožlany 14",
+ "parish": "Kožlany",
+ "district": "Plzeň-sever",
+ "places": [
+  "Kožlany"
+ ],
+ "records": {
+  "N": "1862–1879",
+  "iN": "1862–1879"
+ },
+ "scans": 221,
+ "order": "chronological",
+ "index": {
+  "scans": "~200–221",
+  "refers_to": "page"
+ },
+ "points": [
+  {
+   "scan": 157,
+   "type": "N",
+   "year": 1876,
+   "page": "154"
+  },
+  {
+   "scan": 212,
+   "type": "iN",
+   "letters": "N"
+  }
+ ],
+ "sections": [],
+ "notes": [],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

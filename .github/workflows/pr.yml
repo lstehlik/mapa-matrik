@@ -1,0 +1,53 @@
+# Kontrola pull requestu a automatické sloučení, když jen přidává body.
+# pull_request_target: běží s kódem z main, z PR se čtou jen data (git show), nic z PR se nespouští.
+name: kontrola PR
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+concurrency:
+  group: pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  kontrola:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Stáhnout data z PR (bez spouštění)
+        run: git fetch origin "pull/${{ github.event.pull_request.number }}/head:pr"
+      - name: Kontrola
+        id: kontrola
+        run: |
+          set +e
+          python3 tools/kontrola_pr.py "${{ github.event.pull_request.base.sha }}" pr "${{ github.event.pull_request.user.login }}" > vysledek.txt
+          echo "kod=$?" >> "$GITHUB_OUTPUT"
+          cat vysledek.txt
+          { echo '```'; cat vysledek.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Sloučit (jen přidání)
+        if: steps.kontrola.outputs.kod == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr merge "$PR" --repo "$GITHUB_REPOSITORY" --squash --match-head-commit "${{ github.event.pull_request.head.sha }}"
+          gh workflow run pages.yml --repo "$GITHUB_REPOSITORY" --ref main
+      - name: Předat člověku
+        if: steps.kontrola.outputs.kod == '2'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          gh label create ke-kontrole --repo "$GITHUB_REPOSITORY" --color FBCA04 --description "Potřebuje kontrolu správce" --force
+          gh pr edit "$PR" --repo "$GITHUB_REPOSITORY" --add-label ke-kontrole
+          { echo 'Tento PR mění nebo maže existující data, nebo v něm je něco podezřelého. Projde ho správce.'; echo; echo '```'; cat vysledek.txt; echo '```'; } > komentar.md
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body-file komentar.md
+      - name: Chyba formátu
+        if: steps.kontrola.outputs.kod == '1'
+        run: exit 1

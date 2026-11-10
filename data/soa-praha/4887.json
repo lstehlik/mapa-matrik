@@ -1,0 +1,81 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "4887",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/4887",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/4887/{scan}",
+ "signature": "Čistá 04",
+ "parish": "Čistá",
+ "district": "Rakovník",
+ "places": [
+  "Čistá",
+  "Krakov",
+  "Břežany",
+  "Zavidov",
+  "Zdeslav",
+  "Šípy",
+  "Kůzová",
+  "Křekovice",
+  "Všesulov"
+ ],
+ "records": {
+  "N": "1687–1731",
+  "O": "1688–1731",
+  "Z": "1688–1731"
+ },
+ "scans": 281,
+ "language": "čeština",
+ "order": "chronological",
+ "points": [
+  {
+   "scan": 45,
+   "type": "N",
+   "year": 1698,
+   "year_to": 1699
+  },
+  {
+   "scan": 51,
+   "type": "N",
+   "year": 1700,
+   "months": "VIII–XII"
+  },
+  {
+   "scan": 52,
+   "type": "N",
+   "year": 1701,
+   "months": "I–III",
+   "note": "nadpis „Letha 1701“"
+  },
+  {
+   "scan": 55,
+   "type": "N",
+   "year": 1702,
+   "months": "I–III",
+   "note": "nadpis „Letha 1702“"
+  },
+  {
+   "scan": 57,
+   "type": "N",
+   "year": 1702,
+   "months": "VII–IX"
+  },
+  {
+   "scan": 58,
+   "type": "N",
+   "year": 1702,
+   "year_to": 1703,
+   "months": "X–I"
+  }
+ ],
+ "sections": [],
+ "notes": [
+  "Bez rejstříku. Zápisy česky, u každého ves na začátku řádku („z Kratowa“ = Krakov)."
+ ],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

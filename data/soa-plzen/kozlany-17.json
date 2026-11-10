@@ -1,0 +1,53 @@
+{
+ "schema": 1,
+ "archive": "soa-plzen",
+ "portal": "portafontium",
+ "portal_id": "kozlany-17",
+ "url": "https://www.portafontium.eu/register/soap-pn/kozlany-17",
+ "signature": "Kožlany 17",
+ "parish": "Kožlany",
+ "district": "Plzeň-sever",
+ "places": [
+  "Kožlany"
+ ],
+ "records": {
+  "O": "1838–1895"
+ },
+ "scans": 286,
+ "order": "chronological",
+ "points": [
+  {
+   "scan": 16,
+   "type": "O",
+   "year": 1844,
+   "page": "13"
+  },
+  {
+   "scan": 17,
+   "type": "O",
+   "year": 1844,
+   "page": "14"
+  },
+  {
+   "scan": 74,
+   "type": "O",
+   "year": 1863,
+   "page": "fol. 70"
+  },
+  {
+   "scan": 82,
+   "type": "O",
+   "year": 1866,
+   "page": "fol. 78",
+   "note": "přibližně"
+  }
+ ],
+ "sections": [],
+ "notes": [],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

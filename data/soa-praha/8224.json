@@ -1,0 +1,52 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "8224",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/8224",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/8224/{scan}",
+ "signature": "Lužná 02",
+ "parish": "Lužná",
+ "district": "Rakovník",
+ "places": [
+  "Lužná",
+  "Belšanka"
+ ],
+ "records": {
+  "N": "1830–1870",
+  "iN": "1830–1870"
+ },
+ "scans": 272,
+ "language": "čeština",
+ "order": "chronological",
+ "index": {
+  "scans": "250–~260",
+  "refers_to": "folio"
+ },
+ "points": [
+  {
+   "scan": 208,
+   "type": "N",
+   "year": 1866,
+   "page": "fol. 206"
+  },
+  {
+   "scan": 250,
+   "type": "iN",
+   "letters": "E–F"
+  },
+  {
+   "scan": 253,
+   "type": "iN",
+   "letters": "H"
+  }
+ ],
+ "sections": [],
+ "notes": [],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

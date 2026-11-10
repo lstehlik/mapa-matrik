@@ -1,0 +1,45 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "8229",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/8229",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/8229/{scan}",
+ "signature": "Lužná 07",
+ "parish": "Lužná",
+ "district": "Rakovník",
+ "places": [
+  "Lužná"
+ ],
+ "records": {
+  "O": "1847–1889",
+  "Z": "1847–1878"
+ },
+ "scans": 144,
+ "language": "čeština",
+ "order": "mixed",
+ "index": {
+  "scans": "~128–144",
+  "refers_to": "folio"
+ },
+ "points": [
+  {
+   "scan": 134,
+   "type": "iO",
+   "letters": "K"
+  },
+  {
+   "scan": 135,
+   "type": "iO",
+   "letters": "L–M"
+  }
+ ],
+ "sections": [],
+ "notes": [],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}

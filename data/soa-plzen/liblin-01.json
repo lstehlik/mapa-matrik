@@ -1,0 +1,57 @@
+{
+ "schema": 1,
+ "archive": "soa-plzen",
+ "portal": "portafontium",
+ "portal_id": "liblin-01",
+ "url": "https://www.portafontium.eu/register/soap-pn/liblin-01",
+ "signature": "Liblín 01",
+ "parish": "Liblín",
+ "district": "Rokycany",
+ "places": [
+  "Bujesily"
+ ],
+ "records": {
+  "N": "1822–1843"
+ },
+ "scans": 309,
+ "order": "by_village",
+ "points": [
+  {
+   "scan": 143,
+   "type": "N",
+   "year": 1828,
+   "place": "Bujesily",
+   "note": "přibližně"
+  },
+  {
+   "scan": 156,
+   "type": "N",
+   "year": 1836,
+   "page": "324",
+   "place": "Bujesily"
+  },
+  {
+   "scan": 158,
+   "type": "N",
+   "year": 1838,
+   "place": "Bujesily",
+   "note": "přibližně"
+  }
+ ],
+ "sections": [
+  {
+   "scans": "~130–185",
+   "type": "N",
+   "place": "Bujesily",
+   "years": "1822–1843",
+   "note": "str. 264–375"
+  }
+ ],
+ "notes": [],
+ "sources": [
+  {
+   "by": "ondrnovy",
+   "date": "2026-11-10"
+  }
+ ]
+}
