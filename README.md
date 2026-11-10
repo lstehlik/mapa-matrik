@@ -3,7 +3,7 @@
 Otevřená **mapa naskenovaných matričních knih** českých archivů: který snímek je který rok, ves a strana,
 kde je rejstřík a jak je kniha uspořádaná. Pro lidi i pro AI agenty, kteří dělají rodokmeny.
 
-**Hlavní přínos: šetří tokeny a zátěž archivů.** Agent (nebo člověk) neotvírá desítky snímků, aby našel
+**Hlavní přínos: rychlejší hledání, méně tokenů a menší zátěž archivů.** Agent (nebo člověk) neotvírá desítky snímků, aby našel
 správný rok nebo ves – zeptá se mapy a otevře rovnou ten správný. Každý snímek je pro AI drahý obrázek ve vysokém
 rozlišení a archivy kvůli opakovanému stahování blokují přístup; mapa tu orientaci zaplatí jednou pro všechny.
 
