@@ -108,20 +108,27 @@ def send(repo):
     remotes = run("git", "remote", cwd=repo).split()
     upstream = "upstream" if "upstream" in remotes else "origin"
     branch = f"body-{by}-{datetime.datetime.now().strftime('%Y%m%d-%H%M')}"
+    if run("git", "status", "--porcelain", cwd=repo):
+        raise RuntimeError(f"{repo} má neuložené změny, nic se neodeslalo")
+    previous = run("git", "branch", "--show-current", cwd=repo)
     run("git", "fetch", upstream, cwd=repo)
     run("git", "switch", "-c", branch, f"{upstream}/main", cwd=repo)
-    added, warnings = apply(repo, by)
-    if not added:
-        return 0, warnings, None
-    check = subprocess.run([sys.executable, "tools/kontrola.py"], cwd=repo, capture_output=True, text=True)
-    if check.returncode:
-        raise RuntimeError(f"kontrola neprošla, nic se neodeslalo:\n{check.stdout}")
-    run("git", "add", "data", cwd=repo)
-    run("git", "commit", "-m", f"Body od {by}: {added}", cwd=repo)
-    run("git", "push", "-u", "origin", branch, cwd=repo)
-    url = run("gh", "pr", "create", "--repo", UPSTREAM, "--head", f"{by}:{branch}", "--base", "main",
-              "--title", f"Body od {by}: {added}", "--body", "Orientační body z práce agenta (tools/body.py).",
-              cwd=repo)
+    try:
+        added, warnings = apply(repo, by)
+        if not added:
+            return 0, warnings, None
+        check = subprocess.run([sys.executable, "tools/kontrola.py"], cwd=repo, capture_output=True, text=True)
+        if check.returncode:
+            raise RuntimeError(f"kontrola neprošla, nic se neodeslalo:\n{check.stdout}")
+        run("git", "add", "data", cwd=repo)
+        run("git", "commit", "-m", f"Body od {by}: {added}", cwd=repo)
+        run("git", "push", "-u", "origin", branch, cwd=repo)
+        url = run("gh", "pr", "create", "--repo", UPSTREAM, "--head", f"{by}:{branch}", "--base", "main",
+                  "--title", f"Body od {by}: {added}", "--body", "Orientační body z práce agenta (tools/body.py).",
+                  cwd=repo)
+    finally:
+        run("git", "checkout", "--", ".", cwd=repo)
+        run("git", "switch", previous or "main", cwd=repo)
     STORE.rename(STORE.with_name(f"body.odeslane-{datetime.datetime.now().strftime('%Y%m%d-%H%M%S')}.jsonl"))
     return added, warnings, url
 
