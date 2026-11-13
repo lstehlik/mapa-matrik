@@ -1,0 +1,73 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "5168",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/5168",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/5168/{scan}",
+ "signature": "Dolní Kralovice 06",
+ "parish": "Dolní Kralovice",
+ "district": "Benešov",
+ "places": [
+  "Dolní Kralovice",
+  "Horní Kralovice",
+  "Bernartice",
+  "Bezděkov",
+  "Brzotice",
+  "Libčice",
+  "Loket",
+  "Milošovice",
+  "Příseka",
+  "Radíkovice",
+  "Střítež",
+  "Tomice",
+  "Vraždovy Lhotice",
+  "Zahrádčice"
+ ],
+ "records": {
+  "N": "1781–1784",
+  "O": "1781–1784"
+ },
+ "scans": 28,
+ "language": "latinsky",
+ "order": "mixed",
+ "points": [
+  {
+   "scan": 8,
+   "type": "O",
+   "year": 1782,
+   "months": "XI",
+   "note": "oddaní, vsi chronologicky"
+  },
+  {
+   "scan": 14,
+   "type": "N",
+   "year": 1781
+  },
+  {
+   "scan": 21,
+   "type": "N",
+   "year": 1782,
+   "months": "X",
+   "note": "narození, vsi chronologicky"
+  },
+  {
+   "scan": 23,
+   "type": "N",
+   "year": 1783,
+   "months": "V"
+  },
+  {
+   "scan": 26,
+   "type": "N",
+   "year": 1784,
+   "months": "VI"
+  }
+ ],
+ "sources": [
+  {
+   "by": "rodokmen-kriva",
+   "date": "2026-11-13"
+  }
+ ]
+}

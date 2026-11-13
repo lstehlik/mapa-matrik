@@ -1,0 +1,252 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "5165",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/5165",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/5165/{scan}",
+ "signature": "Dolní Kralovice 03",
+ "parish": "Dolní Kralovice",
+ "district": "Benešov",
+ "places": [
+  "Dolní Kralovice",
+  "Horní Kralovice",
+  "Bezděkov",
+  "Blažejovice",
+  "Brzotice",
+  "Chotěměřice",
+  "Habrovčice",
+  "Hněvkovice",
+  "Libčice",
+  "Loket",
+  "Němčice",
+  "Nová Ves u Dolních Kralovic",
+  "Onšovec",
+  "Příseka",
+  "Střítež",
+  "Tomice",
+  "Vraždovy Lhotice",
+  "Zahájí",
+  "Zahrádčice"
+ ],
+ "records": {
+  "N": "1765–1781",
+  "O": "1765–1780",
+  "Z": "1765–1781"
+ },
+ "scans": 204,
+ "language": "latinsky",
+ "order": "mixed",
+ "points": [
+  {
+   "scan": 40,
+   "type": "N",
+   "year": 1769,
+   "note": "zápisy psané souvislým textem, vsi chronologicky"
+  },
+  {
+   "scan": 43,
+   "type": "N",
+   "year": 1769,
+   "year_to": 1770,
+   "months": "XI–I"
+  },
+  {
+   "scan": 44,
+   "type": "N",
+   "year": 1770,
+   "months": "I"
+  },
+  {
+   "scan": 45,
+   "type": "N",
+   "year": 1770,
+   "months": "I–II"
+  },
+  {
+   "scan": 51,
+   "type": "N",
+   "year": 1771,
+   "months": "I–III",
+   "page": "47",
+   "note": "od 1771 tabulka (den, kněz, dítě, rodiče, kmotři, ves)"
+  },
+  {
+   "scan": 52,
+   "type": "N",
+   "year": 1771,
+   "months": "III–V",
+   "page": "48"
+  },
+  {
+   "scan": 53,
+   "type": "N",
+   "year": 1771,
+   "months": "V–VIII",
+   "page": "49"
+  },
+  {
+   "scan": 54,
+   "type": "N",
+   "year": 1771,
+   "months": "VIII–XI",
+   "page": "50"
+  },
+  {
+   "scan": 55,
+   "type": "N",
+   "year": 1771,
+   "year_to": 1772,
+   "months": "XII–IV",
+   "page": "51"
+  },
+  {
+   "scan": 56,
+   "type": "N",
+   "year": 1772,
+   "months": "IV–VI",
+   "page": "52"
+  },
+  {
+   "scan": 57,
+   "type": "N",
+   "year": 1772,
+   "months": "VI–X",
+   "page": "53"
+  },
+  {
+   "scan": 58,
+   "type": "N",
+   "year": 1772,
+   "year_to": 1773,
+   "months": "X–I",
+   "page": "54"
+  },
+  {
+   "scan": 59,
+   "type": "N",
+   "year": 1773,
+   "months": "III–IV",
+   "page": "55"
+  },
+  {
+   "scan": 60,
+   "type": "N",
+   "year": 1773,
+   "months": "IV–VII",
+   "page": "56"
+  },
+  {
+   "scan": 61,
+   "type": "N",
+   "year": 1773,
+   "months": "VII–X",
+   "page": "57"
+  },
+  {
+   "scan": 62,
+   "type": "N",
+   "year": 1773,
+   "year_to": 1774,
+   "months": "X–I",
+   "page": "58"
+  },
+  {
+   "scan": 63,
+   "type": "N",
+   "year": 1774,
+   "months": "I–II",
+   "page": "59"
+  },
+  {
+   "scan": 64,
+   "type": "N",
+   "year": 1774,
+   "months": "II–IV",
+   "page": "60"
+  },
+  {
+   "scan": 65,
+   "type": "N",
+   "year": 1774,
+   "months": "IV–VII",
+   "page": "61"
+  },
+  {
+   "scan": 66,
+   "type": "N",
+   "year": 1774,
+   "months": "VII–IX",
+   "page": "62"
+  },
+  {
+   "scan": 67,
+   "type": "N",
+   "year": 1774,
+   "months": "IX–XII",
+   "page": "63"
+  },
+  {
+   "scan": 68,
+   "type": "N",
+   "year": 1774,
+   "year_to": 1775,
+   "months": "XII–II",
+   "page": "64"
+  },
+  {
+   "scan": 69,
+   "type": "N",
+   "year": 1775,
+   "months": "II–IV",
+   "page": "65"
+  },
+  {
+   "scan": 70,
+   "type": "N",
+   "year": 1775,
+   "months": "V–VII"
+  },
+  {
+   "scan": 71,
+   "type": "N",
+   "year": 1775,
+   "months": "VII–IX",
+   "page": "67"
+  },
+  {
+   "scan": 72,
+   "type": "N",
+   "year": 1775,
+   "months": "IX–X"
+  },
+  {
+   "scan": 73,
+   "type": "N",
+   "year": 1775,
+   "year_to": 1776,
+   "months": "X–II",
+   "page": "69"
+  },
+  {
+   "scan": 74,
+   "type": "N",
+   "year": 1776,
+   "months": "II–IV",
+   "page": "70"
+  },
+  {
+   "scan": 75,
+   "type": "N",
+   "year": 1776,
+   "months": "IV–VI",
+   "page": "71"
+  }
+ ],
+ "sources": [
+  {
+   "by": "rodokmen-kriva",
+   "date": "2026-11-13"
+  }
+ ]
+}

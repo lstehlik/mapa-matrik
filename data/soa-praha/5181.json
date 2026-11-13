@@ -1,0 +1,111 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "5181",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/5181",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/5181/{scan}",
+ "signature": "Dolní Kralovice 19",
+ "parish": "Dolní Kralovice",
+ "district": "Benešov",
+ "places": [
+  "Dolní Kralovice",
+  "Horní Kralovice",
+  "Bernartice",
+  "Bezděkov",
+  "Borovsko",
+  "Brzotice",
+  "Čejtice",
+  "Libčice",
+  "Loket",
+  "Milošovice",
+  "Onšovec",
+  "Příseka",
+  "Radíkovice",
+  "Střítež",
+  "Tomice",
+  "Vraždovy Lhotice",
+  "Všebořice",
+  "Zahrádčice"
+ ],
+ "records": {
+  "Z": "1819–1831"
+ },
+ "scans": 135,
+ "language": "česky, německy, latinsky",
+ "order": "by_village",
+ "points": [
+  {
+   "scan": 74,
+   "type": "Z",
+   "year": 1819,
+   "year_to": 1822,
+   "page": "fol. 82",
+   "place": "Libčice"
+  },
+  {
+   "scan": 75,
+   "type": "Z",
+   "year": 1822,
+   "year_to": 1824,
+   "page": "fol. 83",
+   "place": "Libčice"
+  },
+  {
+   "scan": 76,
+   "type": "Z",
+   "year": 1824,
+   "year_to": 1825,
+   "page": "fol. 84",
+   "place": "Libčice"
+  },
+  {
+   "scan": 77,
+   "type": "Z",
+   "year": 1825,
+   "year_to": 1827,
+   "page": "fol. 85",
+   "place": "Libčice"
+  },
+  {
+   "scan": 78,
+   "type": "Z",
+   "year": 1827,
+   "year_to": 1828,
+   "page": "fol. 86",
+   "place": "Libčice"
+  },
+  {
+   "scan": 79,
+   "type": "Z",
+   "year": 1828,
+   "year_to": 1829,
+   "page": "fol. 87",
+   "place": "Libčice"
+  },
+  {
+   "scan": 82,
+   "type": "Z",
+   "year": 1825,
+   "page": "fol. 90",
+   "place": "Loket"
+  },
+  {
+   "scan": 86,
+   "type": "Z",
+   "year": 1829,
+   "year_to": 1831,
+   "page": "fol. 94",
+   "place": "Libčice"
+  }
+ ],
+ "sources": [
+  {
+   "by": "rodokmen-kriva",
+   "date": "2026-11-13"
+  }
+ ],
+ "notes": [
+  "Číslo folia = číslo snímku + 8 (ověřeno na sn. 74–86)."
+ ]
+}

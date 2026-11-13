@@ -1,0 +1,52 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "5180",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/5180",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/5180/{scan}",
+ "signature": "Dolní Kralovice 18",
+ "parish": "Dolní Kralovice",
+ "district": "Benešov",
+ "places": [
+  "Dolní Kralovice",
+  "Horní Kralovice",
+  "Bernartice",
+  "Bezděkov",
+  "Borovsko",
+  "Brzotice",
+  "Čejtice",
+  "Hrádek",
+  "Libčice",
+  "Loket",
+  "Milošovice",
+  "Onšovec",
+  "Příseka",
+  "Radíkovice",
+  "Střítež",
+  "Tomice",
+  "Vraždovy Lhotice",
+  "Všebořice",
+  "Zahrádčice"
+ ],
+ "records": {
+  "Z": "1801–1819"
+ },
+ "scans": 94,
+ "language": "česky, německy, latinsky",
+ "order": "by_village",
+ "points": [
+  {
+   "scan": 36,
+   "type": "Z",
+   "year": 1802,
+   "place": "Vraždovy Lhotice"
+  }
+ ],
+ "sources": [
+  {
+   "by": "rodokmen-kriva",
+   "date": "2026-11-13"
+  }
+ ]
+}
