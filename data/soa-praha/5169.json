@@ -1,0 +1,54 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "5169",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/5169",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/5169/{scan}",
+ "signature": "Dolní Kralovice 07",
+ "parish": "Dolní Kralovice",
+ "district": "Benešov",
+ "places": [
+  "Dolní Kralovice",
+  "Horní Kralovice",
+  "Bernartice",
+  "Bezděkov",
+  "Borovsko",
+  "Brzotice",
+  "Čejtice",
+  "Hrádek",
+  "Libčice",
+  "Loket",
+  "Milošovice",
+  "Onšovec",
+  "Příseka",
+  "Radíkovice",
+  "Střítež",
+  "Tomice",
+  "Vraždovy Lhotice",
+  "Všebořice",
+  "Zahrádčice"
+ ],
+ "records": {
+  "N": "1784–1801"
+ },
+ "scans": 129,
+ "language": "česky, německy, latinsky",
+ "order": "by_village",
+ "points": [
+  {
+   "scan": 4,
+   "type": "N",
+   "year": 1785,
+   "months": "III",
+   "page": "2",
+   "place": "Dolní Kralovice"
+  }
+ ],
+ "sources": [
+  {
+   "by": "rodokmen-kriva",
+   "date": "2026-11-13"
+  }
+ ]
+}

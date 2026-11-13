@@ -1,0 +1,117 @@
+{
+ "schema": 1,
+ "archive": "soa-praha",
+ "portal": "ebadatelna",
+ "portal_id": "5182",
+ "url": "https://ebadatelna.soapraha.cz/pages/MatrikaPage/matrikaId/5182",
+ "scan_url": "https://ebadatelna.soapraha.cz/d/5182/{scan}",
+ "signature": "Dolní Kralovice 20",
+ "parish": "Dolní Kralovice",
+ "district": "Benešov",
+ "places": [
+  "Dolní Kralovice",
+  "Horní Kralovice",
+  "Bernartice",
+  "Bezděkov",
+  "Borovsko",
+  "Brzotice",
+  "Čejtice",
+  "Libčice",
+  "Loket",
+  "Milošovice",
+  "Onšovec",
+  "Příseka",
+  "Radíkovice",
+  "Střítež",
+  "Tomice",
+  "Vraždovy Lhotice",
+  "Všebořice",
+  "Zahrádčice"
+ ],
+ "records": {
+  "Z": "1832–1849"
+ },
+ "scans": 272,
+ "language": "česky, německy, latinsky",
+ "order": "by_village",
+ "points": [
+  {
+   "scan": 121,
+   "type": "Z",
+   "year": 1832,
+   "year_to": 1834,
+   "page": "fol. 121",
+   "place": "Libčice"
+  },
+  {
+   "scan": 122,
+   "type": "Z",
+   "year": 1834,
+   "page": "fol. 122",
+   "place": "Libčice"
+  },
+  {
+   "scan": 123,
+   "type": "Z",
+   "year": 1834,
+   "year_to": 1835,
+   "page": "fol. 123",
+   "place": "Libčice"
+  },
+  {
+   "scan": 124,
+   "type": "Z",
+   "year": 1835,
+   "year_to": 1836,
+   "page": "fol. 124",
+   "place": "Libčice"
+  },
+  {
+   "scan": 125,
+   "type": "Z",
+   "year": 1837,
+   "page": "fol. 125",
+   "place": "Libčice"
+  },
+  {
+   "scan": 126,
+   "type": "Z",
+   "year": 1838,
+   "page": "fol. 126",
+   "place": "Libčice"
+  },
+  {
+   "scan": 127,
+   "type": "Z",
+   "year": 1838,
+   "year_to": 1839,
+   "page": "fol. 127",
+   "place": "Libčice"
+  },
+  {
+   "scan": 128,
+   "type": "Z",
+   "year": 1839,
+   "year_to": 1841,
+   "page": "fol. 128",
+   "place": "Libčice"
+  },
+  {
+   "scan": 129,
+   "type": "Z",
+   "year": 1841,
+   "year_to": 1842,
+   "page": "fol. 129",
+   "place": "Libčice"
+  }
+ ],
+ "sources": [
+  {
+   "by": "rodokmen-kriva",
+   "date": "2026-11-13"
+  }
+ ],
+ "notes": [
+  "V oddílu Libčice odpovídá číslo folia číslu snímku (sn. 121–129)."
+ ]
+}
